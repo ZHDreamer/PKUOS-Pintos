@@ -147,13 +147,13 @@ int pintos_init(void) {
 void show_console(void) {
   // input_init();
   // console_init();
-  while (true) {
+  while (1) {
     printf("PKUOS>");
 
     int index = 0;
     char command[50];
     char c;
-    while (true) {
+    while (1) {
       c = input_getc();
       if (c == '\n' || c == '\r') {
         command[index] = 0;
